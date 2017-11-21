@@ -9,7 +9,7 @@ public class Peon extends Ficha{
 
     @Override
     public boolean MovimientoValido(int x, int y) {
-        if(x+1==getX()){
+        if(y+1==getY()||y==getY()+2&&isMovido()){
             //if(verificar casilla ocupada)
             return true;
             //else
